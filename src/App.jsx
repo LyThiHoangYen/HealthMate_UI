@@ -1,14 +1,12 @@
-import './app.css';
-
-
+import './App.css';
+import Layout from './layout/Layout';
 
 function App() {
-
   return (
     <>
-      <h1 className='text-[20px]'>hello</h1>
+      <Layout />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
