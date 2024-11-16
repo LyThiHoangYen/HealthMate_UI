@@ -1,3 +1,11 @@
-import { readFileSync } from "fs";
 
-readFileSync
+
+const Footer = () => {
+  return (
+    <div>
+      home
+    </div>
+  )
+}
+
+export default Footer
