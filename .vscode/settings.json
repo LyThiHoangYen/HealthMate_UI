@@ -1,0 +1,5 @@
+{
+    "editor.multiCursorModifier": "alt",
+    "terminal.integrated.altClickMovesCursor": false,
+    "notebook.multiCursor.enabled": false
+}
