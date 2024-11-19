@@ -1,10 +1,10 @@
 import React, { useState } from "react"; 
 import doctorImg from "../../assets/images/doctor-img02.png";
 import starIcon from "../../assets/images/Star.png";
-import DoctorAbout from './DoctorAbout'
-import Feedback from './Feedback'
-import Sidepanel from "./Sidepanel";
-const DoctorDetails = () => {
+//import DoctorAbout from './DoctorAbout'
+//import Feedback from './Feedback'
+//import Sidepanel from "./Sidepanel";
+const DoctorsDetails = () => {
   const [tab,setTab] = useState('about')
 return (
   <section>
@@ -65,4 +65,4 @@ return (
   </section>
   );
 };
-export default DoctorDetails;
+export default DoctorsDetails;
