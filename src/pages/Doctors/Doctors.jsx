@@ -1,9 +1,10 @@
 import DoctorCard from "./../../components/Doctors/DoctorCard";
 import {doctors} from "./../../assets/data/doctor"
+import Testimonial from "../../components/Testimonial/Testimonial";
 const Doctors = () => {
   return (
     <>
-      <section className="bd-[#ff9ea]">
+      <section className="bg-[#fff9ea]">
         <div className="container text-center">
           <h2 className="heading">Find a Doctor</h2>
           <div className="max-w-[570px] mt-[30px] mx-auto bg-[#0066ff2c] rounded-md flex items-center justify-between">
@@ -26,6 +27,20 @@ const Doctors = () => {
             ))}
           </ div>
         </ div>
+      </section>
+
+      <section>      
+        <div className="container">
+          <div className="xl:w-[470px] mx-auto">
+            <h2 className="heading text-center">What our patients say</h2>
+            <p className="text__para text-center">
+            World-class care for everyone. Our health System offers unmatched,
+            expert health care.
+            </p>
+          </div>
+          
+          <Testimonial/>
+        </div>
       </section>
     </>
   )

@@ -1,4 +1,3 @@
-import React from 'react'
 import { formatDate } from '../../utils/formatDate'
 
 const DoctorAbout = () => {
@@ -8,10 +7,11 @@ const DoctorAbout = () => {
             <h3 className='text-[20px] leading-[30px] text-headingColor font-semibold flex items-center gap-2'>
                 About of
                 <span className='text-irisBlueColor font-bold text-[24px] leading-9'>
-                    Kalpesh Vishwakarma
+                TTUT.TS.BS Vũ Trường Khanh
                 </span>
             </h3>
-            <p className="text__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis aliquam nobis nulla optio ab cum excepturi, voluptates animi dolore eveniet numquam, quo et possimus quibusdam eligendi esse cupiditate velit laudantium sequi asperiores, architecto inventore ipsum repellendus. Sit dolorum velit magni voluptatem optio veniam tempora saepe, quae, quibusdam cupiditate doloribus.
+            <p className="text__para">Với gần 25 năm công tác trong ngành Y, TTƯT.TS.BS Vũ Trường Khanh được biết đến là một trong những chuyên gia hàng đầu tại Việt Nam trong lĩnh vực Tiêu hóa – Gan Mật – Tụy. Sau khi tốt nghiệp bác sĩ đa khoa tại Trường Đại học Y Thái Bình. BS Vũ Trường Khanh tiếp tục tham gia khóa đào tạo Nội soi Tiêu hóa tại Tokyo, Nhật Bản để trau dồi chuyên môn nhằm phục vụ tốt hơn nữa cho việc khám chữa bệnh. Trở về Việt Nam, bác sĩ Vũ Trường Khanh có nhiều cơ hội thăm khám, chẩn đoán cho người bệnh, đồng thời không ngừng tự học tập, cập nhật kiến thức y khoa để phục vụ việc chẩn đoán và điều trị các bệnh lý Tiêu hóa – Gan Mật – Tụy cho người bệnh. Ông cũng từng là trưởng khoa Tiêu hóa trước kia và là Giám đốc của Trung tâm Tiêu hóa – 
+                Hiện tại, với kinh nghiệm nhiều năm thăm khám và điều trị cho người bệnh, trên cương vị là Trưởng khoa Tiêu hóa – Gan Mật – Tụy, BVĐK Tâm Anh Hà Nội BS Vũ Trường Khanh luôn đặt mục tiêu cải thiện sức khỏe cho những người mà ông khám và điều trị bệnh cũng như cộng đồng.
             </p>
 
         </div>
@@ -57,7 +57,7 @@ const DoctorAbout = () => {
             </h3>
 
             <ul className='grip sm:grid-cols-2 gap-[30px] pt-4 md:p-5'>
-                <li className='p-4 rounded bg-[#ff9ea]'>
+                <li className='p-4 rounded bg-[#fff9ea]'>
                     <span className='text-yellowColor text-[15px] leading-6 font-semibold'>
                         {formatDate("07-04-2010")}-{formatDate("07-04-2014")}
                     </span>
@@ -68,7 +68,7 @@ const DoctorAbout = () => {
                             New Apollo Hospital, New York.
                     </p>
                 </li>
-                <li className='p-4 rounded bg-[#ff9ea]'>
+                <li className='p-4 rounded bg-[#fff9ea]'>
                     <span className='text-yellowColor text-[15px] leading-6 font-semibold'>
                         {formatDate("07-04-2010")}-{formatDate("07-04-2014")}
                     </span>
@@ -76,7 +76,8 @@ const DoctorAbout = () => {
                             Sr. Surgeon
                     </p>
                     <p className='text-[14px] leading-5 font-medium text-textColor'>
-                            New Apollo Hospital, New York.
+                    Phó chủ nhiệm bộ môn Nội Tổng hợp, Đại học Y Hà Nội
+                   
                     </p>
                 </li>
             </ul>
