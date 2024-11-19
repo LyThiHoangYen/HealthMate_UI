@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Link } from 'react-router-dom';
 import heroImg01 from '../assets/images/hero-img01.png';
 import heroImg02 from '../assets/images/hero-img02.png';
@@ -28,7 +28,7 @@ const Home = () => {
             <div>
               <div className="lg:w-[570px]">
                 <h1 className="text-[36px] leading-[46px] text-headingColor font-[800] md:text-[60px] md:leading-[70px]">
-                  We help patients live a healthy, longer life.
+                 Simplifying healthcare, one appointment at a time
                 </h1>
                 <p className="text__para">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -66,7 +66,7 @@ const Home = () => {
 
             <div className="flex gap-[30px] justify-end">
               <div>
-                <img className="w-full" src={heroImg01} alt="" />
+                <img className="w-full" src={heroImg01} alt="" style={{ width: "370px", height: "524px",borderRadius: "20px",marginTop: "150px" }}/>
               </div>
               <div className="mt-[30px]">
                 <img src={heroImg02} alt="" className="w-full mb-[30px]" />

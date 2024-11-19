@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 
 import aboutimg from '../../assets/images/about.png';
