@@ -1,9 +1,18 @@
+<<<<<<< Updated upstream
 import { useState, useContext } from "react";
 import { Link, useNavigate } from 'react-router-dom';
 import { BASE_URL } from "../config";
 import { toast } from "react-toastify";
 import { authContext } from "../context/AuthContext.jsx"
 import HashLoader from 'react-spinners/HashLoader'
+=======
+import { useState /*, useContext*/ } from "react";
+import { Link /*, useNavigate*/ } from 'react-router-dom';
+//import { BASE_URL } from "../config";
+//import { toast } from "react-toastify";
+//import { authContext } from "../context/AuthContext.jsx"
+//import HashLoader from 'react-spinners/HashLoader'
+>>>>>>> Stashed changes
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -11,14 +20,24 @@ const Login = () => {
     password:''
   })
 
+<<<<<<< Updated upstream
   const [loading,setLoading] = useState(false)
   const navigate = useNavigate()
   const {dispatch} = useContext(authContext)
+=======
+  //const [loading,setLoading] = useState(false)
+  //const navigate = useNavigate()
+  //const {dispatch} = useContext(authContext)
+>>>>>>> Stashed changes
 
   const handleInputChange = e=>{
     setFormData({...formData,[e.target.name]:e.target.value})
   }
+<<<<<<< Updated upstream
 
+=======
+/*
+>>>>>>> Stashed changes
   const submitHandler = async event=>{ 
     event.preventDefault()
     setLoading(true)
@@ -56,7 +75,11 @@ const Login = () => {
       toast.error(err.message)
       setLoading(false)
     }
+<<<<<<< Updated upstream
   }
+=======
+  }*/
+>>>>>>> Stashed changes
 
   return (<section className="px-5 lg:px-0">
 
@@ -65,7 +88,11 @@ const Login = () => {
         Hello! <span className="text-primaryColor">Welcome</span> Back 🎉
       </h3>
 
+<<<<<<< Updated upstream
       <form className="py-4 md:py-0" onSubmit={submitHandler}>
+=======
+      <form className="py-4 md:py-0" /*onSubmit={submitHandler}*/>
+>>>>>>> Stashed changes
         <div className="mb-5">
           <input 
             type="email"
@@ -98,10 +125,16 @@ const Login = () => {
             type="submit"
             className="w-full bg-primaryColor text-white text-[18px] leading-[30px] rounded-lg py-3"  
           >
+<<<<<<< Updated upstream
             {loading ? <HashLoader size={25} color="#fff" />: "Login"}
           </button>
         </div>
         
+=======
+           {/*{loading ? <HashLoader size={25} color="#fff" />: "Login"}*/} 
+          </button>
+        </div>
+>>>>>>> Stashed changes
         <p className="mt-5 text-textColor text-center">
           Don&apos;t have an account? 
           
