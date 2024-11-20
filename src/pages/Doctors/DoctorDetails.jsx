@@ -1,8 +1,9 @@
-import React, { useState } from "react"; 
+import { useState } from "react"; 
 import doctorImg from "../../assets/images/doctor-img02.png";
 import starIcon from "../../assets/images/Star.png";
 import DoctorAbout from './DoctorAbout';
 import Feedback from './Feedback';
+import SidePanel from "./SidePanel";
 
 const DoctorDetails = () => {
   const [tab,setTab] = useState('about')
@@ -45,7 +46,7 @@ return (
             </button>
             <button 
             onClick={()=>setTab('feedback')}
-              className={`${tab==='feedback' && 'border-b border-solid border-primaryColor'}py-2 px-5 mr-5 text-[16px] leading-7 text-headingColor font-semibold`}>
+              className={`${tab==='feedback' && 'border-b border-solid border-primaryColor'} py-2 px-5 mr-5 text-[16px] leading-7 text-headingColor font-semibold`}>
               Feedback
             </button>
           </div> 
@@ -54,8 +55,11 @@ return (
             {tab==='about' && <DoctorAbout/>}
             {tab==='feedback' && <Feedback/>}
           </div>
-
         </div>
+
+      <div>
+        <SidePanel/>
+      </div>
 
       </div> 
     </div>
