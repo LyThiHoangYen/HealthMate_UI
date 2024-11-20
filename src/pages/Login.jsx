@@ -11,14 +11,14 @@ const Login = () => {
     password:''
   })
 
-  const [loading,setLoading] = useState(false)
+ // const [loading,setLoading] = useState(false)
  // const navigate = useNavigate()
  // const {dispatch} = useContext(authContext)
 
   const handleInputChange = e=>{
     setFormData({...formData,[e.target.name]:e.target.value})
   }
-
+/*
   const submitHandler = async event=>{ 
     event.preventDefault()
     setLoading(true)
@@ -56,7 +56,7 @@ const Login = () => {
       toast.error(err.message)
       setLoading(false)
     }
-  }
+  }*/
 
   return (<section className="px-5 lg:px-0">
 
@@ -65,7 +65,7 @@ const Login = () => {
         Hello! <span className="text-primaryColor">Welcome</span> Back 🎉
       </h3>
 
-      <form className="py-4 md:py-0" onSubmit={submitHandler}>
+      <form className="py-4 md:py-0" /*onSubmit={submitHandler}*/>
         <div className="mb-5">
           <input 
             type="email"
@@ -98,7 +98,8 @@ const Login = () => {
             type="submit"
             className="w-full bg-primaryColor text-white text-[18px] leading-[30px] rounded-lg py-3"  
           >
-            {loading ? <HashLoader size={25} color="#fff" />: "Login"}
+            login
+           {/* {loading ? <HashLoader size={25} color="#fff" />: "Login"}*/}
           </button>
         </div>
         <p className="mt-5 text-textColor text-center">
