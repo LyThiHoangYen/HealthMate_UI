@@ -9,7 +9,7 @@ import { Link /*,useNavigate*/ } from 'react-router-dom';
 
 const Signup = () => {
   const [selectedFile, setSelectedFile] = useState(null);
- // const [previewURL, setPreviewURL] = useState("");
+  const [previewURL, setPreviewURL] = useState("");
  // const [loading,setLoading] = useState(false)
 
   const [formData, setFormData] = useState({
@@ -25,21 +25,21 @@ const Signup = () => {
 
   const handleInputChange = e=>{
     setFormData({ ...formData,[e.target.name]:e.target.value});
-  }
+  };
   
   const handleFileInputChange = async event =>{
     const file = event.target.files[0]
    // cloudinary to be used to upload image
    //const data = await uploadImageToCloudinary(file)
    
-   setPreviewURL(data.url)
-   setSelectedFile(data.url)
-   setFormData({...formData,photo:data.url})
-  }
+   //setPreviewURL(data.url)
+   //setSelectedFile(data.url)
+   //setFormData({...formData,photo:data.url})
+  };
   const submitHandler = async event=>{
   
     event.preventDefault()
-    setLoading(true)
+    /*setLoading(true)
 
     try {
       const res = await fetch(`${BASE_URL}/auth/register`,{
@@ -60,8 +60,8 @@ const Signup = () => {
     } catch (err) {
       toast.error(err.message)
       setLoading(false)
-    }
-  }
+    }*/
+  };
   return (
     <section className='px-5 xl:px-0'>
       <div className='max-w-[1170px] mx-auto'>
@@ -79,7 +79,7 @@ const Signup = () => {
               Create an <span className='text-primaryColor'>account</span>
             </h3>
             
-            <form /*onSubmit={submitHandler}*/>
+            <form onSubmit={submitHandler}>
               <div className="mb-5">
               <input 
                 type="text"
@@ -180,6 +180,7 @@ const Signup = () => {
                 type="submit"
                 className='w-full bg-primaryColor text-white text-[18px] leading-[30px] rounded-lg px-4 py-3'
               >
+              Sign Up
                 {/*
                 {loading?  (
                 <HashLoader size={35} color='#ffffff'/> 
