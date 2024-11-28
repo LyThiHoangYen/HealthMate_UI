@@ -6,6 +6,7 @@ const initialState = {
     token: localStorage.getItem('token') || null, 
 };
 
+
 export const authContext = createContext(initialState);
 
 const authReducer = (state,action)=>{
@@ -31,7 +32,7 @@ const authReducer = (state,action)=>{
         default: 
             return state;
     }
-}
+};
 
 export const AuthContextProvider = ({ children }) => {
     const [state, dispatch] = useReducer(authReducer,initialState);
@@ -54,4 +55,4 @@ export const AuthContextProvider = ({ children }) => {
         {children} 
         </authContext.Provider>
     );
-}
+};
