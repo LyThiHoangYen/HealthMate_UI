@@ -92,7 +92,7 @@ const DoctorDetails = () => {
                 experiences={experiences} 
                 />
                 )}
-              {tab === 'feedback' && <Feedback reviews={reviews} totalRating={} />}
+              {tab === 'feedback' && <Feedback reviews={reviews} totalRating={totalRating} />}
             </div>
           </div>
 
